@@ -1,8 +1,7 @@
-package com.example.springboo_mongodb.service;
+package com.example.springboot_mongodb.service;
 
-import com.example.springboo_mongodb.exception.ResourceNotFoundException;
-import com.example.springboo_mongodb.model.Student;
-import com.example.springboo_mongodb.repository.StudentRepository;
+import com.example.springboot_mongodb.model.Student;
+import com.example.springboot_mongodb.repository.StudentRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +17,7 @@ public class StudentService implements IStudentService{
     public Student saveStudent(Student student) {
         Optional<Student> saveStudent = studentRepository.findStudentByEmail(student.getEmail());
         if (saveStudent.isPresent())
-            System.out.printf("Student with email: %s", student.getEmail());
+            System.out.printf("Student with email: %s is present", student.getEmail()); // logger ERROR
        return studentRepository.save(student);
     }
 

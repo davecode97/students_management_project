@@ -1,4 +1,4 @@
-package com.example.springboo_mongodb.model;
+package com.example.springboot_mongodb.model;
 
 import lombok.Setter;
 import lombok.Getter;

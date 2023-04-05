@@ -1,11 +1,9 @@
-package com.example.springboo_mongodb.controller;
+package com.example.springboot_mongodb.controller;
 
-import com.example.springboo_mongodb.exception.ResourceNotFoundException;
-import com.example.springboo_mongodb.model.Student;
-import com.example.springboo_mongodb.service.StudentService;
+import com.example.springboot_mongodb.exception.ResourceNotFoundException;
+import com.example.springboot_mongodb.model.Student;
+import com.example.springboot_mongodb.service.StudentService;
 import lombok.AllArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -58,16 +56,9 @@ public class StudentController {
     }
 
     @DeleteMapping("/students/{id}")
-    public ResponseEntity<Map<String, Boolean>> deleteStudent(@PathVariable String id) {
-        studentService.getStudentById(id)
-                .orElseThrow(() -> new ResourceNotFoundException(String.format("Student with Id: %s not found", id)));
-
+    public ResponseEntity<String> deleteStudent(@PathVariable String id) {
         studentService.deleteStudent(id);
 
-        Map<String, Boolean> response = new HashMap<>();
-        response.put("deleted", Boolean.TRUE);
-
-
-        return ResponseEntity.ok(response);
+        return new ResponseEntity<String>("Employee deleted Successfully!.", HttpStatus.OK);
     }
 }

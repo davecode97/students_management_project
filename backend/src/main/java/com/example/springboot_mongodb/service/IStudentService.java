@@ -1,6 +1,6 @@
-package com.example.springboo_mongodb.service;
+package com.example.springboot_mongodb.service;
 
-import com.example.springboo_mongodb.model.Student;
+import com.example.springboot_mongodb.model.Student;
 
 import java.util.List;
 import java.util.Optional;

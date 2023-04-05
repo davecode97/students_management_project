@@ -1,4 +1,4 @@
-package com.example.springboo_mongodb.exception;
+package com.example.springboot_mongodb.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     private static final long serialVersionUID = 1L;

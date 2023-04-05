@@ -1,4 +1,4 @@
-package com.example.springboo_mongodb;
+package com.example.springboot_mongodb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
