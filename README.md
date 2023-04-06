@@ -1,4 +1,4 @@
-# Students Management Project
+# Students Management FullStack Project
 Fullstack application: Spring Boot + Angular + MongoDB.
 
 ## Backend tools
