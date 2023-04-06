@@ -2,7 +2,7 @@
 Fullstack application: Spring Boot + Angular + MongoDB.
 
 ## Backend tools
-``gradle``  ``Spring Boot: 2.7.11-SNAPSHOT``
+``gradle``  ``Spring Boot: 2.7.11-SNAPSHOT`` ``Java 17 SE``
 
 ``Junit5`` ``Mockito``
 
