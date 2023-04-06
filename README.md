@@ -28,3 +28,4 @@ Fullstack application: Spring Boot + Angular + MongoDB.
 Resources: 
 https://www.javaguides.net/2021/08/angular-crud-example-with-spring-boot.html
 https://www.youtube.com/watch?v=ssj0CGxv60k
+https://www.javaguides.net/2022/03/spring-boot-unit-testing-crud-rest-api-with-junit-and-mockito.html
