@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "6cc7d1d5-cf85-4b97-85cc-add4da75348b",
+		"name": "SpringBoot-MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21423482"
+	},
+	"item": [
+		{
+			"name": "GET Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Student by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/students/642cd09c41acad67350b8480",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"642cd09c41acad67350b8480"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Store Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Lucia\",\n    \"lastName\": \"Santiango\",\n    \"email\": \"santiago@test.com\",\n    \"gender\": \"FEMALE\",\n    \"address\": {\n        \"country\": \"Argertina\",\n        \"city\": \"Buenos Aires\",\n        \"postCode\": \"NE9\"\n    },\n    \"favouriteSubjects\": [\n        \"Computer Sciences\"\n    ],\n    \"totalSpentInBooks\": 10,\n    \"created\": \"2023-04-03T23:36:26.607\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"TEST\",\n    \"lastName\": \"TEST\",\n    \"email\": \"example6@gmail.com\",\n    \"gender\": \"FEMALE\",\n    \"address\": {\n        \"country\": \"England\",\n        \"city\": \"London\",\n        \"postCode\": \"NE9\"\n    },\n    \"favouriteSubjects\": [\n        \"Computer Sciences\"\n    ],\n    \"totalSpentInBooks\": 10,\n    \"created\": \"2023-04-03T23:36:26.607\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/students/642bb75aa2f1327241e6f624",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"642bb75aa2f1327241e6f624"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Update Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/students/642cd09c41acad67350b8480",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"students",
+						"642cd09c41acad67350b8480"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
